@@ -1,0 +1,12 @@
+<p>my-new-component list!</p>
+<ul *ngIf="myArr!=null">
+  <li *ngFor ="let arr of myArr">{{arr}}</li>
+</ul>
+<button (click)="clickEvent($event)" type="button" name="button">Button</button>
+<h1 [style.color]="styleBinding1">Style Binding 01</h1>
+<h1 [style.color]="styleBinding2 ? 'lightgreen' : 'grey'">Style Binding 02</h1>
+<h1 [ngStyle]="styleBindingObj">Style Binding Object</h1>
+<p>{{carArr}}</p>
+<p>{{someProperty}}</p>
+<h2 [@myAnimation]='anim' (click)='animateMe()'>Click me</h2>
+<h2 [@myOpac]='opac' (click)='myOpac()'>Click me</h2>
